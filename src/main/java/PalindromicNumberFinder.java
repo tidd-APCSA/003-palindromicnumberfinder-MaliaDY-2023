@@ -17,11 +17,14 @@ public class PalindromicNumberFinder {
     // }
 
     // // this is a helper method for searchForPalindromicNum. It's purpose is to test if a number is actually a palindrome
-    // public boolean testPalindromicNum(int num){
-    //  String converted = Integer.toString(num);
-  
-
-    // }
+    public boolean testPalindromicNum(int num){
+     String converted = Integer.toString(num);
+    if(converted.equals(this.reverseNum(num))){
+        return true;
+    }else{
+      return false;
+    }
+}
 
 
     // // this is a helper method for testPalindromicNum. It should reverse the number and return it.
