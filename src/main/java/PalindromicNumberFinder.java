@@ -17,7 +17,7 @@ public class PalindromicNumberFinder {
      while(this.testPalindromicNum(flag) == false){
        flag++;
      }
-     return flag;
+     return flag - num;
     }
 
     // // this is a helper method for searchForPalindromicNum. It's purpose is to test if a number is actually a palindrome
