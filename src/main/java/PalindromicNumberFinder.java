@@ -11,28 +11,33 @@ public class PalindromicNumberFinder {
         return this.num;
     }
 
-    // this method should find the next palindromic number
-    public int searchForPalindromicNum(int num){
+    // // this method should find the next palindromic number
+    // public int searchForPalindromicNum(int num){
 
-    }
+    // }
 
-    // this is a helper method for searchForPalindromicNum. It's purpose is to test if a number is actually a palindrome
-    public boolean testPalindromicNum(int num){
+    // // this is a helper method for searchForPalindromicNum. It's purpose is to test if a number is actually a palindrome
+    // public boolean testPalindromicNum(int num){
+    //  String converted = Integer.toString(num);
+  
+
+    // }
 
 
-    }
-
-
-    // this is a helper method for testPalindromicNum. It should reverse the number and return it.
+    // // this is a helper method for testPalindromicNum. It should reverse the number and return it.
     public String reverseNum(int num){
-
-
-
+      String converted = Integer.toString(num);
+      String reverse = "";
+      for(int i = converted.length() - 1; i >= 0; i--){
+        reverse += converted.charAt(i);
+      }
+      return reverse;
     }
 
 
-    @Override
-    public String toString(){
-        return "You'd have to drive " + searchForPalindromicNum(this.num) + " miles";
+    // @Override
+    // public String toString(){
+    //     return "You'd have to drive " + searchForPalindromicNum(this.num) + " miles";
+    // }
     }
-}
+
