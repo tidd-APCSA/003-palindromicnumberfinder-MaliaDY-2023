@@ -12,9 +12,13 @@ public class PalindromicNumberFinder {
     }
 
     // // this method should find the next palindromic number
-    // public int searchForPalindromicNum(int num){
-
-    // }
+    public int searchForPalindromicNum(int num){
+      int flag = num + 1;
+     while(this.testPalindromicNum(flag) == false){
+       flag++;
+     }
+     return flag;
+    }
 
     // // this is a helper method for searchForPalindromicNum. It's purpose is to test if a number is actually a palindrome
     public boolean testPalindromicNum(int num){

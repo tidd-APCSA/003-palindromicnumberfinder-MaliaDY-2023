@@ -4,6 +4,7 @@ public class PalindromicRunner {
 PalindromicNumberFinder test = new PalindromicNumberFinder(72927);
 System.out.println(test.reverseNum(72927));
 System.out.println(test.testPalindromicNum(72927));
+System.out.println(test.searchForPalindromicNum(72927));
     }
 }
 
